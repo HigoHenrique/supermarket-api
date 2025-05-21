@@ -17,12 +17,6 @@ export class BrandRepository {
     return await Brand.findByPk(id);
   }
 
-  // async findByName(name: string): Promise<Brand | null> {
-  //   return await Brand.findOne({
-  //     where: { name }
-  //   });
-  // }
-
   async findByName(name: string): Promise<Brand | null> {
   return await Brand.findOne({
     where: where(fn('LOWER', col('name')), name.toLowerCase())

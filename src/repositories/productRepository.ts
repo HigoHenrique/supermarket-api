@@ -84,15 +84,6 @@ export class ProductRepository {
     });
   }
 
-  // async findByNameAndBrand(name: string, brandId: string): Promise<Product | null> {
-  //   return await Product.findOne({
-  //     where: {
-  //       name,
-  //       brandId
-  //     }
-  //   });
-  // }
-
 async findByNameAndBrand(name: string, brandId: string): Promise<Product | null> {
   return await Product.findOne({
     where: {

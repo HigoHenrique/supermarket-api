@@ -128,7 +128,6 @@ O projeto utiliza SQLite como banco de dados, armazenado no arquivo `database.sq
    - `brandId`: UUID da marca (chave estrangeira)
    - `createdAt`: Data de criação
    - `updatedAt`: Data de atualização
-   - Constraint única: [name, brandId]
 
 ## Testando a API
 
